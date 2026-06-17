@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banknote Details</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+
+        body{
+            background:#111;
+            color:rgb(255, 255, 255);
+            padding:30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 70%;
+            background-attachment: fixed;
+        }
+
+        .container{
+            max-width:1200px;
+            margin:auto;
+        }
+
+        .hero{
+            background:rgba(255,255,255,0.08);
+            padding:30px;
+            border-radius:20px;
+            text-align:center;
+        }
+
+        .info-box{
+            background:rgba(255,255,255,0.08);
+            padding:25px;
+            border-radius:20px;
+            margin-top:30px;
+        }
+
+        .info-box h2{
+            margin-bottom:15px;
+        }
+
+        .info-box p{
+            font-size:20px;
+            line-height:1.8;
+        }
+          button{
+            padding:10px 15px;
+            margin:5px;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            background:#333;
+            color:white;
+            transition: 0.3s;
+            height: 50px;
+            width: 80px;
+            
+          }
+          button:hover{
+            background:#555;
+            opacity: 0.9;
+            }
+          button:active {
+            opacity: 0.2;
+          }
+          #noteImage {
+            width: 500px;
+            max-width: 100%;
+            margin: 20px 0;
+            transition: opacity 0.3s ease;
+            }
+            .container {
+    cursor: grab;
+}
+
+.container:active {
+    cursor: grabbing;
+}
+  
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+
+        <h1 id="noteTitle"></h1>
+
+        <img id="noteImage" src="" alt="banknote image">
+            <div style="margin-top:20px;">
+            <button onclick="showFront()" >Front</button>
+            <button onclick="showBack()">Back</button>
+            </div>
+
+     </div>
+
+
+    <div class="info-box">
+
+        <h2>General Information</h2>
+
+        <p id="country"></p>
+        <p id="currency"></p>
+        <p id="value"></p>
+        <p id="issueDate"></p>
+        <p id="governor"></p>
+        <p id="person"></p>
+        <p id="material"></p>
+        <p id="dimensions"></p>
+
+    </div>
+
+    <div class="info-box">
+
+        <h2>History</h2>
+
+        <p id="history"></p>
+
+    </div>
+
+    <div class="info-box">
+
+        <h2>Economy</h2>
+
+        <p id="economy"></p>
+
+    </div>
+
+    <div class="info-box">
+
+        <h2>Security Features</h2>
+
+        <p id="security"></p>
+
+    </div>
+ 
+</div>
+
+
+
+
+<script src="note.js"></script>
+
+</body>
+</html>

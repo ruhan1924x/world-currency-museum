@@ -1,0 +1,43 @@
+[
+  {
+    "country": "Bangladesh",
+    "flag": "🇧🇩",
+    "currency":"taka"
+  },
+  {
+    "country": "Japan",
+    "flag": "🇯🇵",
+    "currency":"Yen"
+  },
+  {
+    "country": "United States",
+    "flag": "🇺🇸",
+    "currency":"Dollar"
+  },
+  {
+    "country": "India",
+    "flag": "🇮🇳",
+    "currency": "Rupee"
+  },
+  {
+    "country":"Turkey",
+    "flag":"🇹🇷",
+    "currency": "Lira"
+  },
+  {
+    "country":"Russia",
+    "flag":"🇷🇺",
+    "currency":"ruble"  
+  },
+  {
+    "country":"Thailand",
+    "flag":"🇹🇭",
+    "currency":"Bhat"  
+  },
+    {
+    "country":"Vietnam",
+    "flag":"🇻🇳",
+    "currency":"Dong"  
+  }
+
+]

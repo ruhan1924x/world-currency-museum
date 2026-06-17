@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Currency Museum</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    height:100vh;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg");
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+.search-box{
+    text-align:center;
+    margin-top:40px;
+}
+
+.search-box input{
+    width:310px;
+    padding:17px;
+    font-size: 17px;
+    border:none;
+    border-radius:5px;
+}
+
+.search-box button{
+    padding:17px 25px;
+    font-size: 16px;
+    border:none;
+    background:#22c55e;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* Cards */
+.container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:25px;
+    border-radius:10px;
+    width:210px;
+    text-align:center;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.07);
+}
+.card h3{
+    font-size: 22px;
+}
+
+.card p{
+    font-size: 18px;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌎 World Currency Museum</h1>
+<p>Explore currencies with history & economy</p>
+</header>
+
+<div class="search-box">
+<input type="text" id="search" placeholder="Search country...">
+<button onclick="searchCountry()">Search</button>
+</div>
+
+<div class="container" id="countryList">
+
+
+</div>
+
+</div>
+<p id="noResult" style="text-align: center; display: none; margin-top: 20px;">
+    ❌ No countries found
+</p>
+
+<script src="js/app.js">
+
+</script>
+
+</body>
+</html>
